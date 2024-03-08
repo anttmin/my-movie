@@ -1,0 +1,225 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  overscroll-behavior: smooth;
+  overscroll-behavior-x: none;
+}
+
+/* nav bar  */
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: .5rem 2rem;
+  text-align: center;
+  vertical-align: middle;
+  background-color: black;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.Navbar:hover {
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+
+.Input {
+  padding: 0 0.3rem;
+  color: white;
+}
+
+.Logo {
+  font-weight: bold;
+}
+
+.Input {
+  outline: none;
+  background: transparent;
+}
+
+.icon {
+  width: 20px;
+  height: auto;
+  color: white;
+  margin-left: 0.4rem;
+}
+
+.Form {
+  display: flex;
+}
+
+NavLink.active {
+  color: rgb(23, 228, 23);
+}
+/* nav bar  */
+
+/* header  */
+
+.Background {
+  object-fit: cover;
+  height: 100dvh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  top: 37%;
+  left: 10%;
+}
+
+.passage {
+  width: 70%;
+  margin: 0.5rem 0;
+}
+
+.btn {
+  border-radius: 5px;
+  transition: all ease-in-out 0.4s;
+  display: flex;
+  align-items: center;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.Main-layour {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(40, 35, 35, 0.573);
+  width: 100%;
+  height: 100%;
+}
+
+.playIcon {
+  width: 19px;
+  margin-left: 2px;
+}
+
+/* Popular card  */
+
+.Img {
+  cursor: pointer;
+  transition: all linear 0.2s;
+}
+
+.PlayIcon {
+  color: rgb(193, 35, 35);
+  transition: all linear 0.2s;
+  position: absolute;
+  top: 50%;
+  left: 4%;
+}
+
+.PlayIcon:hover {
+  color: rgb(47, 255, 75);
+}
+
+.Img:hover {
+  transform: translateY(-5px);
+}
+
+/* .Img{
+
+/* Popular card  */
+
+/* details  */
+.MainDetails{
+  background: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.Link{
+  padding: .5rem 2rem;
+  color: red;
+  border-radius: 10px;
+  transition: all ease-in-out .4s;
+}
+
+.Link:hover{
+  outline-color: rgb(17, 206, 17);
+ color: rgb(17, 206, 17);
+
+}
+
+.Details{
+  width: 70%;
+  margin: 2rem auto;
+  padding: 1.3rem .5rem;
+  transform: translateY(-60%);
+  background: rgba(255, 255, 255, 0.2);
+ border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.5px);
+-webkit-backdrop-filter: blur(5.5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.titles{
+   padding: .2rem .3rem;
+   background-color: red;
+   color: rgb(255, 255, 255);
+   border-radius: 5px;
+   font-size: 12px;
+   font-style: italic;
+   margin-top: 5px;
+}
+
+.review{
+  color: black;
+  font-style: italic;
+}
+
+/* details  */
+
+/* search  */
+.Img{
+  object-fit: contain;
+}
+
+.Search{
+width: 60%;
+text-align: center;
+margin: 0 auto;
+margin-bottom: 3%;
+background: rgba(255, 255, 255, 0.35);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.7px);
+-webkit-backdrop-filter: blur(3.7px);
+border: 1px solid rgba(255, 255, 255, 0.22);
+padding: 1.2rem 2rem;
+
+}
+
+.Search img{
+  margin:  0 auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+
+}
+
+.SecondPass{
+  margin: 0 auto;
+}
+
+
+
+/* search  */
+
+/* From https://css.glass */
